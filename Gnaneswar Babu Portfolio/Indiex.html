@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <!--font Awesome---->
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+     <title>Gnaneswar Babu | Java Developer</title>
+
+      <!--Main css-->
+    <link rel="stylesheet" href="style.css">
+ <!--Aos animation--> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+<nav>
+    <!--NAVBAR-->
+    <div class="nav-container">
+        <div class="logo"data-aos="zoom-in" data-aos-duration="1000">
+            <span>Gnaneswar</span>
+        </div>
+
+           <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Indiex.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href=""></a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+ <!--Mobile Dropdown-->
+    <div class="dropdown">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#"></a>
+            <a href="#">Contact Us</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+  <!--Hero Section-->
+<section>
+    <div class="main-container">
+<!--image-->
+        <div class="image">
+            <img src="gnaneswarbabu_image.jpg" alt="Profile Image">
+        </div>
+ 
+        <div class="content">
+            <h1>Hey I'm <span>Gnaneswar Babu</span></h1>
+<!---content-->
+            <div class="typewriter">
+                I'm a <span></span>
+            </div>
+
+            <p>
+                Java Developer with 3+ years of professional experience in building scalable and
+                high-performance backend applications using Java, Spring Boot, and RESTful APIs.
+                Strong experience in JWT authentication, database optimization, and Agile delivery.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/Gnaneswar-Babu" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gnaneswarbabu/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+
+            
+          <a href="GnaneswarBabu_Java Developer.pdf" download class="download-btn">
+    Download CV
+</a>
+        </div>
+
+    </div>
+</section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+        <footer>
+  <p>© 2026 Gnaneswar Babu | Java Developer</p>
+</footer>
+</body>
+</html>

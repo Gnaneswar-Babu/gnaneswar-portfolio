@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+  <title>About | Gnaneswar Babu</title>
+
+  <!-- Main CSS (same as index) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+<!-- SAME NAVBAR AS INDEX -->
+<nav>
+  <div class="nav-container">
+    <div class="logo" data-aos="zoom-in">
+      <span>Gnaneswar</span>
+    </div>
+
+    <div class="links">
+      <div class="link"><a href="Indiex.html">Home</a></div>
+      <div class="link"><a href="about.html">About</a></div>
+      <div class="link"><a href="skills.html">Skills</a></div>
+      <div class="link"><a href="projects.html">Projects</a></div>
+      <div class="link contact-btn"><a href="contact.html">Contact Us</a></div>
+    </div>
+  </div>
+
+  <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+  <div class="dropdown">
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
+      <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT CONTENT (SAME LAYOUT AS HOME) -->
+<section>
+  <div class="main-container">
+    <div class="content" data-aos="fade-up">
+
+      <h1>About <span>Me</span></h1>
+
+      <p>
+        I am a Java Developer with over 3 years of professional experience.
+        Currently working at Santric Technology Private Limited.
+      </p>
+
+      <p>
+        I specialize in backend development using Spring Boot, RESTful APIs,
+        JWT-based authentication, and MySQL databases.
+      </p>
+
+      <p>
+        I focus on writing clean, maintainable, and scalable code following
+        layered architecture principles.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Gnaneswar Babu | Java Developer</p>
+</footer>
+
+<!-- JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({ offset: 0 });
+
+  function hamburg(){
+    document.querySelector(".dropdown").style.transform = "translateY(0px)";
+  }
+  function cancel(){
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+  }
+</script>
+
+</body>
+</html>
